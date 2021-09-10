@@ -305,7 +305,7 @@ class ComponentBlock extends DisplayPluginBase {
           '#description' => $this->t('Select view modes for users to choose from.'),
           '#type' => 'checkboxes',
           '#default_value' => array_filter($this->getOption('views_component_block_display_view_mode')),
-          '#title' => $options['view_mode'],
+          '#title' => $this->t('Select view modes to allow the user to select from on the component block.'),
           '#options' => $this->getViewModes(),
         ];
         break;
